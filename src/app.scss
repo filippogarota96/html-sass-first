@@ -1,10 +1,34 @@
 $body-color: #161212;
-
+$titleColor_primary: #fff;
+$titleColor_secondary: #f2e7ee;
+$header_border: 2px solid white;
+$p_color: #bbcdff;
+$fontSize_paragraph: 20px;
 body {
   background-color: $body-color;
+
 }
 
 
 header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: $header_border;
+}
+ header > h1 {
+   color: $titleColor_primary;
+ }
 
+ main {
+  border-bottom: $header_border
+  padding: 50px;
+ }
+
+h2 {
+  color: $titleColor_secondary;
+}
+
+p {
+  color: $p_color;
+  font-size: $fontSize_paragraph;
 }
