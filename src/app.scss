@@ -3,7 +3,11 @@ $titleColor_primary: #fff;
 $titleColor_secondary: #f2e7ee;
 $header_border: 2px solid white;
 $p_color: #bbcdff;
-$fontSize_paragraph: 20px;
+$fontSize_paragraph: 18px;
+$btnColor_primary: #0d73ff;
+$btnColor_primaryHover: #fff;
+$fontBold: 700;
+
 body {
   background-color: $body-color;
 
@@ -20,8 +24,9 @@ header {
  }
 
  main {
-  border-bottom: $header_border
-  padding: 50px;
+  border-bottom: $header_border;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
  }
 
 h2 {
@@ -31,4 +36,27 @@ h2 {
 p {
   color: $p_color;
   font-size: $fontSize_paragraph;
+}
+
+.btn_footer {
+  background-color:$btnColor_primary;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: $fontSize_paragraph;
+  padding: 5px;
+  font-size: $fontBold;
+  transition: 0.3s background-color ease;
+}
+footer {
+  text-align: center;
+}
+.btn_footer:focus {
+  outline: none;
+}
+
+.btn_footer:hover {
+  background-color: $btnColor_primaryHover;
+  color: black;
+  font-size: $fontBold;
 }
